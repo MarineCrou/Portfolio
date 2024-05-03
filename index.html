@@ -11,42 +11,45 @@
     />
     <link rel="stylesheet" href="./styles.css" />
     <script defer src="./app.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "WJMGwsCihvZygFO3q",
-        });
-      })();
-    </script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <header class="hero-banner">
       <p class="header-p">
-        Hire Me: <a href="" class="header-email">marine.m.crouzet@gmail.com</a>
+        <a href="mailto:marine.m.crouzet@gmail.com" class="header-email"
+          >hire<span class="email-span">marine</span>@gmail.com</a
+        >
       </p>
       <div class="header-container">
         <div class="header-img-div">
           <img
             class="header-image"
-            src="./media/marine-no-bg-glasses-round.png"
+            src="./media/marine-bg-peach.png"
             alt="Marine Photo"
           />
         </div>
-        <h1>
-          I'M <span class="h2-spans">Marine 👋</span>
+        <h1 id="typewriter">
+          I'M <span class="h2-spans">Marine 👋</span>,
           <div>
             A BUSINESS DEVELOPER TURNED
             <span class="h2-spans">SOFTWARE Engineer</span>.
           </div>
         </h1>
       </div>
+      <form id="contact-form">
+        <!-- To simplify the tutorial, the value is static. -->
+        <input type="hidden" name="contact_number" value="697483" />
+        <label>Name</label>
+        <input type="text" name="user_name" />
+        <label>Email</label>
+        <input type="email" name="user_email" />
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send" />
+      </form>
     </header>
     <section class="section1">
-      <h2>projects</h2>
+      <h2>My Work</h2>
     </section>
   </body>
 </html>
