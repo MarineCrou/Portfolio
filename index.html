@@ -22,21 +22,53 @@
     <!-- Typewriter Effect -->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
+
+  <!-- Hero -->
   <body>
     <header class="hero-banner">
-      <p class="header-p">
-        <!-- Mailto -->
-        <a href="mailto:marine.m.crouzet@gmail.com" class="header-email"
-          >hire<span class="email-span">marine</span>@gmail.com</a
-        >
-      </p>
+      <nav id="nav">
+        <ul>
+          <li>logo ?</li>
+          <li>Projects</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
       <div class="header-container">
         <div class="header-img-div">
-          <img
-            class="header-image"
-            src="./media/marine-bg-peach.png"
-            alt="Marine Photo"
-          />
+          <div>
+            <img
+              class="header-image"
+              src="./media/marine-bg-peach.png"
+              alt="Marine Photo"
+            />
+            <div class="project-icons-hero">
+              <a
+                href="https://github.com/MarineCrou"
+                target="_blank"
+                class="social-icons-hero"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/marinecrouzet"
+                target="_blank"
+                class="social-icons-hero"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="mailto:marine.m.crouzet@gmail.com"
+                target="_blank"
+                class="social-icons-hero"
+                ><i class="fa-solid fa-envelope social-icons"></i
+              ></a>
+              <a
+                href="https://drive.google.com/file/d/1TJQsjnmbvHv4QOZg_voPBCv3HfRVwaks/view?usp=sharing"
+                target="_blank"
+                class="social-icons-hero"
+                ><i class="fa-solid fa-file"></i
+              ></a>
+            </div>
+          </div>
         </div>
         <h1 id="typewriter">
           I'M <span class="h2-spans">Marine 👋</span>,
@@ -49,86 +81,34 @@
     </header>
 
     <!-- projects section -->
+    <!-- Slider
+    <section class="slider-wrapper">
+      <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+
+      <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+
+      <ul class="slides-container" id="slides-container">
+        <li class="slide"></li>
+        <li class="slide"></li>
+        <li class="slide"></li>
+        <li class="slide"></li>
+      </ul>
+    </section> -->
+
+    <!-- no slider -->
     <section id="project-section">
       <h2>My Work</h2>
-      <div class="projects-odd">
+      <div class="projects-container">
         <div class="project-container-image">
-          <img
-            src="./media/pacman--live-game.png"
-            alt="Pacman GA Edition visual"
-            class="project-images"
-          />
+          <video autoplay muted loop>
+            <source
+              src="./media/unsung-women-video.mp4"
+              type="video/mp4"
+              alt="Unsung Women video"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
-        <div class="project-container-text">
-          <div class="project-icons">
-            <a
-              href="https://github.com/MarineCrou/SEB-Project-1"
-              target="_blank"
-              class="social-icons"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </div>
-          <h3>Pacman GA Edition</h3>
-          <h4>
-            Welcome to the Pacman GA Edition, a modern twist on the classic
-            Pacman game.
-          </h4>
-          <p>
-            In this edition, players embark on a nostalgic journey with a unique
-            GA-themed twist. As always, the objective is for Pacman to devour
-            all the pellets scattered across the board while evading the four
-            iconic ghosts: Blinky, Pinky, Inky, and Clyde.
-          </p>
-          <p>
-            Failure to do so risks losing one of Pacman's three precious lives.
-            Crafted with HTML, CSS, and JavaScript, this game promises an
-            engaging experience as players navigate through an original,
-            GA-themed grid.
-          </p>
-
-          <button>Play !</button>
-        </div>
-      </div>
-      <div class="projects-even">
-        <div class="project-container-text">
-          <div class="project-icons">
-            <a
-              href="https://github.com/MarineCrou/plant-api?tab=readme-ov-file"
-              class="social-icons"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </div>
-          <h3>Plant (React) Library</h3>
-          <p>project description</p>
-        </div>
-        <div class="project-container-image">
-          <img
-            src="./media/plant-api.png"
-            alt="Plants Website visual"
-            class="project-images"
-          />
-        </div>
-      </div>
-
-      <div class="projects-odd">
-        <div class="project-container-image">
-          <img src="" alt="Gourmet E-shop visual" class="project-images" />
-        </div>
-        <div class="project-container-text">
-          <div class="project-icons">
-            <i class="fa-brands fa-github">
-              <a
-                href="https://github.com/MarineCrou/project-3-frontend?tab=readme-ov-file"
-                class="social-icons"
-              ></a>
-            </i>
-          </div>
-          <h3>Gourmet E-Shop</h3>
-          <p>project description</p>
-        </div>
-      </div>
-
-      <div class="projects-even">
         <div class="project-container-text">
           <div class="project-icons">
             <a
@@ -193,18 +173,85 @@
             alt="sql"
           />
         </div>
+      </div>
+      <div class="projects-container">
         <div class="project-container-image">
-          <video autoplay muted loop>
-            <source
-              src="./media/unsung-women-video.mp4"
-              type="video/mp4"
-              alt="Unsung Women video"
-            />
-            Your browser does not support the video tag.
-          </video>
+          <img
+            src="./media/pacman--live-game.png"
+            alt="Pacman GA Edition visual"
+            class="project-images"
+          />
+        </div>
+        <div class="project-container-text">
+          <div class="project-icons">
+            <a
+              href="https://github.com/MarineCrou/SEB-Project-1"
+              target="_blank"
+              class="social-icons"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <h3>Pacman GA Edition</h3>
+          <h4>
+            Welcome to the Pacman GA Edition, a modern twist on the classic
+            Pacman game.
+          </h4>
+          <p>
+            In this edition, players embark on a nostalgic journey with a unique
+            GA-themed twist. As always, the objective is for Pacman to devour
+            all the pellets scattered across the board while evading the four
+            iconic ghosts: Blinky, Pinky, Inky, and Clyde.
+          </p>
+          <p>
+            Failure to do so risks losing one of Pacman's three precious lives.
+            Crafted with HTML, CSS, and JavaScript, this game promises an
+            engaging experience as players navigate through an original,
+            GA-themed grid.
+          </p>
+
+          <button id="pacman-button">Play !</button>
         </div>
       </div>
-      <!-- <div class="projects-odd">
+      <div class="projects-container">
+        <div class="project-container-text">
+          <div class="project-icons">
+            <a
+              href="https://github.com/MarineCrou/plant-api?tab=readme-ov-file"
+              class="social-icons"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <h3>Plant (React) Library</h3>
+          <p>project description</p>
+        </div>
+        <div class="project-container-image">
+          <img
+            src="./media/plant-api.png"
+            alt="Plants Website visual"
+            class="project-images"
+          />
+        </div>
+      </div>
+
+      <div class="projects-container">
+        <div class="project-container-image">
+          <img src="" alt="Gourmet E-shop visual" class="project-images" />
+        </div>
+        <div class="project-container-text">
+          <div class="project-icons">
+            <i class="fa-brands fa-github">
+              <a
+                href="https://github.com/MarineCrou/project-3-frontend?tab=readme-ov-file"
+                class="social-icons"
+              ></a>
+            </i>
+          </div>
+          <h3>Gourmet E-Shop</h3>
+          <p>project description</p>
+        </div>
+      </div>
+
+      <!-- <div class="projects-container">
         <div><img src="" alt="Vic's Website" /></div>
         <div></div>
       </div> -->

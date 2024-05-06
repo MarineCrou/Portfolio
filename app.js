@@ -5,14 +5,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   typewriter
-    .pauseFor(1000)
-    .typeString(`I'M <span class="h2-spans">Marine </span> 👋,`)
-    .pauseFor(1000)
+    .pauseFor(500)
+    .typeString(`Hi 👋!`)
+    .pauseFor(500)
+    .deleteChars(6)
+    .typeString(`I'M <span class="h2-spans">Marine </span>,`)
     .typeString(
-      "  <br/> A <span style='text-decoration: line-through;'> BUSINESS DEVELOPER </span>"
+      "  <br/> A <span style='text-decoration: line-through;'> BUSINESS </span>"
     )
     .pauseFor(500)
-    .deleteChars(20)
+    .deleteChars(9)
     .typeString(' FULLSTACK <span class="h2-spans"> SOFTWARE Engineer</span>.')
     .pauseFor(1000)
     .typeString(
@@ -22,4 +24,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
         >`
     )
     .start();
+
+  // Carousel:
+
+  const slidesContainer = document.getElementById("slides-container");
+  const slide = document.querySelector(".slide");
+  const prevButton = document.getElementById("slide-arrow-prev");
+  const nextButton = document.getElementById("slide-arrow-next");
 });
