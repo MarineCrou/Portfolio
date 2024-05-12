@@ -3,15 +3,16 @@ body {
 }
 
 :root {
-  --color-peach: #fcceb5;
-  --color-purple: #5a28e5;
-  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark-blue: #091540;
+  --color-blue: #7692ff;
+  --color-light-blue: #abd2fa;
   --main-font: "Rubik", sans-serif;
 }
 
 /* header - hero section */
 header {
-  background: var(--color-purple);
+  background: var(--color-white);
   height: 100vh;
 }
 
@@ -37,8 +38,20 @@ h1 {
   max-width: 50%;
   padding-left: 20px;
   font-family: var(--main-font);
-  color: black;
+  color: var(--color-dark-blue);
 }
+
+.h1-spans {
+  color: var(--color-blue);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.h1-spans:hover {
+  font-style: italic;
+  text-decoration: none;
+}
+
 h2 {
   text-align: center;
   font-family: "Rubik", sans-serif;
@@ -53,36 +66,40 @@ h2 {
   margin: 20px;
   align-items: center;
   font-size: 30px;
-  color: black;
-}
-
-.social-icons-hero:hover {
-  cursor: pointer;
-  color: var(--color-peach);
 }
 
 .social-icons-hero {
   padding: 0 20px;
+  color: var(--color-dark-blue);
+}
+.social-icons-hero:hover {
+  cursor: pointer;
+  color: var(--color-blue);
 }
 
 .header-p {
   text-align: right;
   padding: 20px;
 }
-.header-email {
+.js-header-email {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   text-decoration: none;
   font-weight: 700;
+  color: var(--color-dark-blue);
 }
 
-.header-email:hover {
+.js-header-email:hover {
   text-decoration: underline;
-  color: var(--color-black);
+  color: var(--color-dark-blue);
 }
 .email-span {
-  color: var(--color-peach);
-  text-transform: uppercase;
+  color: var(--color-blue);
+  /* text-transform: uppercase; */
+}
+.email-span:hover {
+  color: var(--color-dark-blue);
+  /* text-transform: uppercase; */
 }
 .header-container {
   display: flex;
@@ -99,21 +116,6 @@ h2 {
   width: 400px;
   display: block;
   margin: auto;
-}
-
-.h2-spans {
-  color: var(--color-peach);
-  text-transform: uppercase;
-  font-weight: 900;
-}
-
-.h2-spans:hover {
-  font-style: italic;
-  text-decoration: none;
-}
-
-a {
-  color: black;
 }
 
 #typewriter {
