@@ -9,18 +9,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
     .typeString(`Hi 👋!`)
     .pauseFor(500)
     .deleteChars(6)
-    .typeString(`I'M <span class="h1-spans">Marine </span>,`)
-    .typeString(
-      "  <br/> A <span style='text-decoration: line-through;'> BUSINESS </span>"
-    )
+    .typeString(`I'M <span class="h1-spans">Marine </span>, `)
     .pauseFor(500)
-    .deleteChars(9)
-    .typeString(' FULLSTACK <span class="h1-spans"> SOFTWARE Engineer</span>.')
+    .typeString('A FULLSTACK <span class="h1-spans"> SOFTWARE Engineer</span>.')
     .pauseFor(1000)
     .typeString(
       `<br/> 
       <a href="mailto:marine.m.crouzet@gmail.com" class="js-header-email" style='font-size: 20px;'
-          >hire<span class="email-span">Marine</span>@gmail.com</a
+          >Hire Me:<span class="email-span"> marine.m.crouzet@gmail.com</span></a
         >`
     )
     .start();
