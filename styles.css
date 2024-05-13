@@ -10,7 +10,7 @@ body {
   --color-white: #ffffff;
   --color-dark-blue: #091540;
   --color-blue: #7692ff;
-  --color-light-blue: #7692ff;
+  --color-light-blue: #abd2fa;
   --main-font: "Rubik", sans-serif;
 }
 
@@ -156,19 +156,11 @@ h1 {
 #skills-about-section {
   padding-bottom: 5%;
   width: 100%;
-  background-color: var(--color-blue);
+  background-color: var(--color-dark-blue);
   height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-#skills-about-section h2 {
-  color: var(--color-white);
-  text-align: center;
-  font-family: "Rubik", sans-serif;
-  padding: 50px;
-  font-size: 60px;
-  margin-bottom: 0;
 }
 
 #about-me-container {
@@ -204,7 +196,7 @@ p {
   padding-top: 20px;
 }
 .social-icons-about {
-  color: var(--color-dark-blue);
+  color: var(--color-light-blue);
   padding: 0 20px;
   font-size: 15px;
   font-family: "Rubik", sans-serif;
@@ -377,35 +369,69 @@ footer {
   padding: 0 10px;
 }
 
-@media (max-width: 768px) {
-  /* Stack navigation items vertically on smaller screens */
-  nav {
-    flex-direction: column;
+@media (max-width: 1028px) {
+  #nav-menu {
+    padding-top: 50px;
+    margin-left: 0;
+  }
+  #nav-menu li a {
+    font-size: 20px;
   }
 
   /* Decrease font sizes for headers on smaller screens */
-  h1,
-  h2,
-  h3,
   h4 {
     font-size: calc(100% - 10px);
   }
 
-  /* Adjust padding and margins to fit smaller screens */
-  .header-container,
-  .projects-container,
-  .project-container-row {
-    padding: 10px;
-    margin: 10px;
+  #typewriter {
+    margin-right: 0px;
   }
 
-  /* Make hero image and header container take full width */
+  .header-container {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+
   .header-img-div,
   .header-container {
     width: 100%;
   }
 
-  /* Smaller project icons */
+  #skills-about-section {
+    width: 100%;
+    background-color: var(--color-blue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #about-me-container {
+    width: 60%;
+    padding: 20px;
+  }
+  #about-me-container h3,
+  p {
+    max-width: 100%;
+  }
+
+  #about-me-container > h3 {
+    font-size: 50px;
+  }
+  #about-me-container > p {
+    font-size: 25px;
+  }
+
+  #skills-stack-container {
+    width: 60%;
+    margin-top: 50px;
+  }
+
   .stack-icons img,
   .project-icons i {
     width: 20px;
