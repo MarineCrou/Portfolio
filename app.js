@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-  var typewriter = new Typewriter(document.getElementById("typewriter"), {
+  const typewriter = new Typewriter(document.getElementById("typewriter"), {
     loop: false,
     delay: 75,
   });
@@ -21,10 +21,32 @@ document.addEventListener("DOMContentLoaded", (event) => {
     )
     .start();
 
-  // Carousel:
+  const aboutTypewritter = new Typewriter(
+    document.getElementById("about-me-typewriter"),
+    {
+      loop: false,
+      delay: 75,
+    }
+  );
+  aboutTypewritter
+    .typeString(`<br/> I'm a startup founder turned software developer.`)
+    .pauseFor(500)
+    .start();
 
-  const slidesContainer = document.getElementById("slides-container");
-  const slide = document.querySelector(".slide");
-  const prevButton = document.getElementById("slide-arrow-prev");
-  const nextButton = document.getElementById("slide-arrow-next");
+  // Add smooth scrolling to each nav item
+  document.querySelectorAll("#nav-menu a").forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute("href");
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    });
+  });
 });

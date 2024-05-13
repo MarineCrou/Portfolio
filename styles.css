@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   color: var(--color-dark-blue);
@@ -7,7 +10,7 @@ body {
   --color-white: #ffffff;
   --color-dark-blue: #091540;
   --color-blue: #7692ff;
-  --color-light-blue: #abd2fa;
+  --color-light-blue: #7692ff;
   --main-font: "Rubik", sans-serif;
 }
 
@@ -115,11 +118,9 @@ h1 {
 }
 .email-span {
   color: var(--color-blue);
-  /* text-transform: uppercase; */
 }
 .email-span:hover {
   color: var(--color-dark-blue);
-  /* text-transform: uppercase; */
 }
 .header-container {
   display: flex;
@@ -144,8 +145,82 @@ h1 {
   text-align: center;
 }
 
-/* --------- Projects section --------- */
+/* --------------------- About / Skills Section --------------------- */
+#skills-about-section {
+  padding-bottom: 5%;
+  width: 100%;
+  background-color: var(--color-blue);
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#skills-about-section h2 {
+  color: var(--color-white);
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  padding: 50px;
+  font-size: 60px;
+  margin-bottom: 0;
+}
 
+#about-me-container {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-me-container h3,
+p {
+  max-width: 70%;
+}
+
+#about-me-container > h3 {
+  font-size: 50px;
+  margin: 20px 0 0 0;
+}
+#skills-stack-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  padding: 20px 10px;
+  margin: 20px 60px;
+  box-shadow: 0 4px 10px 0 var(--color-dark-blue);
+  border-radius: 12px;
+  background-color: #7692ff;
+}
+
+.project-icons-about {
+  padding-top: 20px;
+}
+.social-icons-about {
+  color: var(--color-dark-blue);
+  padding: 0 20px;
+  font-size: 15px;
+  font-family: "Rubik", sans-serif;
+}
+.social-icons-about:hover {
+  color: var(--color-white);
+}
+#skills-stack {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 50px;
+  max-width: 80%;
+}
+#skills-stack i {
+  color: var(--color-dark-blue);
+  padding: 15px;
+}
+#skills-stack i:hover {
+  color: var(--color-white);
+}
+
+/* --------------------- Projects section --------------------- */
 #project-section {
   background-color: var(--color-dark-blue);
   padding-bottom: 5%;
@@ -160,28 +235,27 @@ h1 {
   font-size: 60px;
   background-color: var(--color-dark-blue);
   color: var(--color-light-blue);
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .projects-container {
   display: flex;
-  flex-wrap: wrap; /* Enable wrapping */
-  justify-content: space-around; /* Distribute space evenly */
-  margin: 60px 0; /* Adjust margin as needed */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 60px 0;
 }
 
 .project-container-row {
-  flex: 0 0 45%; /* Each project card will take up 48% of the container width */
-  max-width: 45%; /* Max width same as flex basis */
-  margin: 1%; /* Provide margin around each card */
-  height: auto; /* Height can be auto or set a specific height for uniformity */
+  flex: 0 0 45%;
+  max-width: 45%;
+  margin: 1%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* Ensures content is spaced evenly */
+  justify-content: space-between;
   background-color: var(--color-white);
   border-radius: 12px;
-  background-color: var(--color-light-blue);
 }
 
 .project-container-row > video {
@@ -190,7 +264,7 @@ h1 {
   border-radius: 12px;
   /* margin: 1%; */
   max-width: 100%;
-  /* box-shadow: 0 0 20px 0 #091540; */
+  box-shadow: 0 0 5px 0 var(--color-light-blue);
 }
 
 .project-container-row > img {
@@ -198,6 +272,7 @@ h1 {
   height: 100%;
   /* margin-top: 5%; */
   border-radius: 12px;
+  box-shadow: 0 0 5px 0 var(--color-light-blue);
 }
 
 h3 {
@@ -216,11 +291,10 @@ h4 {
 
 .stack-icons img,
 .project-icons i {
-  width: 30px; /* Consistent icon size */
-  height: 30px; /* Consistent icon size */
+  width: 30px;
+  height: 30px;
 }
 
-/* Target Specifically the button in the project-container-text */
 .project-container-text > button {
   display: block;
   margin-left: auto;
@@ -236,51 +310,21 @@ h4 {
   font-size: 30px;
 }
 
-.social-icons {
-  color: black;
+.github-icon-projects {
+  color: var(--color-blue);
 }
-.social-icons:hover {
-  cursor: pointer;
-  color: white;
+.github-icon-projects {
+  color: var(--color-blue);
+  padding-right: 20px;
+  margin: 0 auto;
 }
-
-/* project 1 button */
-/* #pacman-button {
-  font-family: var(--main-font);
-  box-shadow: 0 0 40px 0 blue;
-  border: 12px solid blue;
-  border-style: double;
-  border-radius: 20px;
-  padding: 20px;
-  cursor: pointer;
-  background-color: black;
-  color: white;
-}
-#pacman-button:hover {
-  font-family: var(--main-font);
-  box-shadow: 0 0 40px 0 #e42026;
-  border: 12px solid #e42026;
-  border-style: double;
-  border-radius: 20px;
-  padding: 20px;
-  cursor: pointer;
-  background-color: black;
-  color: white;
-} */
-
-#unsung-button {
-  text-decoration: none;
-  color: var(--color-white);
-  font-family: var(--main-font);
-  border-radius: 12px;
-  padding: 20px;
-  margin: 20px 0px 40px;
-  cursor: pointer;
-  background-color: var(--color-dark-blue);
-  font-size: 14px;
+.github-icon-projects:hover {
+  color: var(--color-dark-blue);
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
-#unsung-button:hover {
+#project-button {
   text-decoration: none;
   color: var(--color-white);
   font-family: var(--main-font);
@@ -289,6 +333,18 @@ h4 {
   margin: 20px 0px 40px;
   cursor: pointer;
   background-color: var(--color-blue);
+  font-size: 14px;
+}
+
+#project-button:hover {
+  text-decoration: none;
+  color: var(--color-white);
+  font-family: var(--main-font);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0px 40px;
+  cursor: pointer;
+  background-color: var(--color-dark-blue);
 }
 
 /* Footer */
