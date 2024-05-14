@@ -18,39 +18,56 @@ h1,
 h2,
 h3,
 h4,
-nav {
+nav,
+p {
   font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  font-size: 5.9vw;
+}
+
+h2 {
+  font-size: 4vw;
+}
+
+h3 {
+  font-size: 2.8vw;
+}
+
+p {
+  font-size: 2vmin;
 }
 
 /* header - hero section */
 header {
   background: var(--color-white);
   height: 100vh;
+  margin-bottom: 50px; /* Add margin bottom to ensure separation */
 }
 
+/* NAV SECTION ============ */
 nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-right: 30px;
 }
 
 #nav-menu > li {
-  font-size: 18px;
   font-weight: 500;
   margin: 0 20px;
 }
+
+#nav-menu :hover {
+  color: var(--color-blue);
+}
+
 li > a {
-  font-size: 18px;
+  font-size: 2vmin;
   font-weight: 500;
   margin: 0 20px;
   text-decoration: none;
   color: var(--color-dark-blue);
-}
-
-#nav-menu :hover {
-  font-size: 18px;
-  color: var(--color-blue);
 }
 
 nav.scroll-down.fade-out-background {
@@ -61,17 +78,34 @@ ul {
   text-align: center;
   padding: 0;
 }
+
 li {
   display: inline-block;
   margin: 0px auto;
   padding: 6px 6px;
-  font-size: 16px;
   font-family: var(--main-font);
-  font-size: 20px;
+}
+
+/* HERO SECTION ============= */
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.header-img-div {
+  width: 50%;
+}
+
+.header-image {
+  width: 400px;
+  display: block;
+  margin: auto;
 }
 
 h1 {
-  font-size: 80px;
   max-width: 50%;
   padding-left: 20px;
   font-family: var(--main-font);
@@ -95,13 +129,14 @@ h1 {
   justify-content: center;
   margin: 20px;
   align-items: center;
-  font-size: 30px;
+  font-size: 3.5vh;
 }
 
 .social-icons-hero {
   padding: 0 20px;
   color: var(--color-dark-blue);
 }
+
 .social-icons-hero:hover {
   cursor: pointer;
   color: var(--color-blue);
@@ -111,6 +146,7 @@ h1 {
   text-align: right;
   padding: 20px;
 }
+
 .js-header-email {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -123,33 +159,13 @@ h1 {
   text-decoration: underline;
   color: var(--color-dark-blue);
 }
+
 .email-span {
   color: var(--color-blue);
 }
+
 .email-span:hover {
   color: var(--color-dark-blue);
-}
-.header-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-}
-.header-img-div {
-  width: 50%;
-}
-
-.header-image {
-  width: 400px;
-  display: block;
-  margin: auto;
-}
-
-#typewriter {
-  padding: 20px;
-  margin-right: 50px;
-  text-align: center;
 }
 
 /* --------------------- About / Skills Section --------------------- */
@@ -157,10 +173,11 @@ h1 {
   padding-bottom: 5%;
   width: 100%;
   background-color: var(--color-dark-blue);
-  height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: fit-content;
+  margin-top: 50px;
 }
 
 #about-me-container {
@@ -171,15 +188,16 @@ h1 {
   align-items: center;
 }
 
-#about-me-container h3,
+#about-me-container h2,
 p {
   max-width: 70%;
+  color: var(--color-white);
 }
 
-#about-me-container > h3 {
-  font-size: 50px;
+#about-me-container > h2 {
   margin: 20px 0 0 0;
 }
+
 #skills-stack-container {
   display: flex;
   flex-direction: column;
@@ -195,15 +213,18 @@ p {
 .project-icons-about {
   padding-top: 20px;
 }
+
 .social-icons-about {
   color: var(--color-light-blue);
   padding: 0 20px;
   font-size: 15px;
   font-family: "Rubik", sans-serif;
 }
+
 .social-icons-about:hover {
   color: var(--color-white);
 }
+
 #skills-stack {
   display: flex;
   flex-direction: row;
@@ -211,10 +232,12 @@ p {
   font-size: 50px;
   max-width: 80%;
 }
+
 #skills-stack i {
   color: var(--color-dark-blue);
   padding: 15px;
 }
+
 #skills-stack i:hover {
   color: var(--color-white);
 }
@@ -231,7 +254,6 @@ p {
   font-family: "Rubik", sans-serif;
   padding: 70px;
   padding-bottom: 0;
-  font-size: 60px;
   background-color: var(--color-dark-blue);
   color: var(--color-light-blue);
   margin: 0;
@@ -261,7 +283,6 @@ p {
   width: 100%;
   height: 100%;
   border-radius: 12px;
-  /* margin: 1%; */
   max-width: 100%;
   box-shadow: 0 0 5px 0 var(--color-light-blue);
 }
@@ -269,14 +290,12 @@ p {
 .project-container-row > img {
   width: 100%;
   height: 100%;
-  /* margin-top: 5%; */
   border-radius: 12px;
   box-shadow: 0 0 5px 0 var(--color-light-blue);
 }
 
 h3 {
   font-family: "Rubik", sans-serif;
-  font-size: 30px;
   color: var(--color-dark-blue);
   margin-bottom: 10px;
 }
@@ -312,11 +331,13 @@ h4 {
 .github-icon-projects {
   color: var(--color-blue);
 }
+
 .github-icon-projects {
   color: var(--color-blue);
   padding-right: 20px;
   margin: 0 auto;
 }
+
 .github-icon-projects:hover {
   color: var(--color-dark-blue);
   padding-right: 20px;
@@ -360,71 +381,66 @@ footer {
 .project-icon-footer :hover {
   cursor: pointer;
 }
+
 .social-icons-footer {
   color: var(--color-light-blue);
   padding: 0 10px;
 }
+
 .social-icons-footer:hover {
   color: var(--color-blue);
   padding: 0 10px;
 }
 
+/* =============== Media Queries =============== */
 @media (max-width: 1028px) {
   #nav-menu {
     padding-top: 50px;
     margin-left: 0;
   }
+
   #nav-menu li a {
     font-size: 20px;
-  }
-
-  /* Decrease font sizes for headers on smaller screens */
-  h4 {
-    font-size: calc(100% - 10px);
-  }
-
-  #typewriter {
-    margin-right: 0px;
   }
 
   .header-container {
     padding: 10px;
     margin: 10px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100vh;
+    justify-content: flex-start;
+    height: fit-content;
   }
 
-  .header-img-div,
-  .header-container {
-    width: 100%;
+  .header-image {
+    width: 40vw;
+    display: block;
+    margin: auto;
+  }
+
+  h1 {
+    max-width: 100%;
+    padding-left: 0;
+    text-align: center;
   }
 
   #skills-about-section {
     width: 100%;
     background-color: var(--color-blue);
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 50px; /* Ensure there's space from the header */
   }
 
   #about-me-container {
     width: 60%;
     padding: 20px;
   }
+
   #about-me-container h3,
   p {
     max-width: 100%;
-  }
-
-  #about-me-container > h3 {
-    font-size: 50px;
-  }
-  #about-me-container > p {
-    font-size: 25px;
   }
 
   #skills-stack-container {
@@ -436,5 +452,71 @@ footer {
   .project-icons i {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav-menu li a {
+    font-size: 18px;
+  }
+
+  .header-container {
+    padding: 10px;
+    margin: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .header-image {
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #about-me-container,
+  #skills-stack-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-container-row {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #nav-menu {
+    flex-direction: column;
+  }
+
+  #nav-menu li {
+    margin: 10px 0;
+  }
+
+  .header-image {
+    width: 200px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  #about-me-container,
+  #skills-stack-container {
+    width: 90%;
+  }
+
+  .project-icons {
+    font-size: 20px;
   }
 }
