@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     .start();
 
   // Add smooth scrolling to each nav item
-  document.querySelectorAll("#nav-menu a").forEach((anchor) => {
+  document.querySelectorAll("#nav-menu nav-scroll").forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
 

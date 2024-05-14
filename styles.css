@@ -298,6 +298,7 @@ h3 {
   font-family: "Rubik", sans-serif;
   color: var(--color-dark-blue);
   margin-bottom: 10px;
+  max-width: 80%;
 }
 
 h4 {
@@ -305,12 +306,17 @@ h4 {
   color: var(--color-dark-blue);
   margin-top: 0;
   font-weight: 500;
+  max-width: 80%;
 }
 
 .stack-icons img,
 .project-icons i {
   width: 30px;
   height: 30px;
+}
+.stack-icons {
+  color: var(--color-blue);
+  max-width: 80%;
 }
 
 .project-container-text > button {
@@ -324,22 +330,18 @@ h4 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding-top: 20px;
+  padding: 20px 0;
   font-size: 30px;
 }
 
 .github-icon-projects {
-  color: var(--color-blue);
-}
-
-.github-icon-projects {
-  color: var(--color-blue);
+  color: var(--color-dark-blue);
   padding-right: 20px;
   margin: 0 auto;
 }
 
 .github-icon-projects:hover {
-  color: var(--color-dark-blue);
+  color: var(--color-blue);
   padding-right: 20px;
   margin: 0 auto;
 }
@@ -349,10 +351,9 @@ h4 {
   color: var(--color-white);
   font-family: var(--main-font);
   border-radius: 12px;
-  padding: 20px;
-  margin: 20px 0px 40px;
+  padding: 3vw;
   cursor: pointer;
-  background-color: var(--color-blue);
+  background-color: var(--color-dark-blue);
   font-size: 14px;
 }
 
@@ -361,10 +362,10 @@ h4 {
   color: var(--color-white);
   font-family: var(--main-font);
   border-radius: 12px;
-  padding: 20px;
-  margin: 20px 0px 40px;
+  padding: 3vw;
   cursor: pointer;
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-blue);
+  font-size: 14px;
 }
 
 /* Footer */
