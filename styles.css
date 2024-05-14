@@ -397,12 +397,12 @@ footer {
 /* tablet */
 @media (max-width: 1022px) {
   #nav-menu {
-    padding-top: 50px;
+    padding-top: 5vh;
     margin-left: 0;
   }
 
   #nav-menu li a {
-    font-size: 20px;
+    font-size: 3vw;
   }
 
   .header-container {
@@ -480,23 +480,30 @@ footer {
   #nav-menu {
     flex-direction: column;
   }
-
-  #nav-menu li {
-    margin: 10px 0;
+  #nav-menu > li {
+    font-weight: 500;
+    margin: 0;
   }
 
-  .header-container {
-    padding: 10px;
-    margin: 10px;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: auto;
+  li a {
+    font-size: 2vw;
+  }
+
+  .header-img-div {
+    width: 100%;
   }
 
   .header-image {
-    width: 200px;
+    width: 55vw;
+    display: block;
+    margin: auto;
   }
 
+  .project-icons-hero {
+    font-size: 4.5vw;
+  }
+
+  /* About + Skills section */
   #about-me-container,
   #skills-stack-container {
     width: 80%;
@@ -537,6 +544,8 @@ footer {
   .stack-icons {
     font-size: 7vw;
     padding: 10px;
+    max-width: 60%;
+    text-align: center;
   }
 
   /* projects section */
