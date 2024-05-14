@@ -317,6 +317,7 @@ h4 {
 .stack-icons {
   color: var(--color-blue);
   max-width: 80%;
+  font-size: 2.8vw;
 }
 
 .project-container-text > button {
@@ -351,10 +352,10 @@ h4 {
   color: var(--color-white);
   font-family: var(--main-font);
   border-radius: 12px;
-  padding: 3vw;
+  padding: 1vw;
   cursor: pointer;
   background-color: var(--color-dark-blue);
-  font-size: 14px;
+  font-size: 1vw;
 }
 
 #project-button:hover {
@@ -362,10 +363,10 @@ h4 {
   color: var(--color-white);
   font-family: var(--main-font);
   border-radius: 12px;
-  padding: 3vw;
+  padding: 1vw;
   cursor: pointer;
   background-color: var(--color-blue);
-  font-size: 14px;
+  font-size: 1vw;
 }
 
 /* Footer */
@@ -447,6 +448,13 @@ footer {
     max-width: 100%;
   }
 
+  .social-icons-about {
+    color: var(--color-dark-blue);
+    padding: 0 20px;
+    font-size: 15px;
+    font-family: "Rubik", sans-serif;
+  }
+
   #skills-stack-container {
     width: 60%;
     margin-top: 50px;
@@ -456,6 +464,44 @@ footer {
   .project-icons i {
     width: 20px;
     height: 20px;
+  }
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 30px;
+  }
+  .project-container-row {
+    flex: 0 0 45%;
+    max-width: 80%;
+    margin: 1%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    border-radius: 12px;
+    margin: 20px 0;
+  }
+  .stack-icons {
+    font-size: 4vw;
+    padding: 10px;
+    max-width: 60%;
+    text-align: center;
+  }
+  #project-button {
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: var(--main-font);
+    border-radius: 12px;
+    padding: 2.5vw;
+    cursor: pointer;
+    background-color: var(--color-dark-blue);
+    font-size: 2.4vw;
   }
 }
 /* mobile */
