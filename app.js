@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     .pauseFor(1000)
     .typeString(
       `<br/> 
-      <a href="mailto:marine.m.crouzet@gmail.com" class="js-header-email" style='font-size: 20px;'
+      <p><a href="mailto:marine.m.crouzet@gmail.com" class="js-header-email" style='font-size: 3vw;'
           >Hire Me:<span class="email-span"> marine.m.crouzet@gmail.com</span></a
-        >`
+        ></p>`
     )
     .start();
 
