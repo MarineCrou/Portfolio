@@ -243,6 +243,9 @@ p {
 }
 
 /* --------------------- Projects section --------------------- */
+hr {
+  margin: 0;
+}
 #project-section {
   background-color: var(--color-dark-blue);
   padding-bottom: 5%;
@@ -254,8 +257,7 @@ p {
   font-family: "Rubik", sans-serif;
   padding: 70px;
   padding-bottom: 0;
-  background-color: var(--color-dark-blue);
-  color: var(--color-light-blue);
+  color: var(--color-white);
   margin: 0;
 }
 
