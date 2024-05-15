@@ -508,6 +508,17 @@ footer {
     background-color: var(--color-dark-blue);
     font-size: 2.4vw;
   }
+
+  #project-button:hover {
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: var(--main-font);
+    border-radius: 12px;
+    padding: 2.5vw;
+    cursor: pointer;
+    background-color: var(--color-blue);
+    font-size: 2.4vw;
+  }
 }
 /* mobile */
 @media (max-width: 480px) {
