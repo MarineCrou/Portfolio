@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   typewriter
     .pauseFor(500)
-    .typeString(`Hi 👋!`)
+    .typeString(
+      `Hi <span class="h1-spans"><i class="fa-regular fa-hand"></i></span>!`
+    )
     .pauseFor(500)
     .deleteChars(6)
     .typeString(`I'M <span class="h1-spans">Marine </span>, `)
