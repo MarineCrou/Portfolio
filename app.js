@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     .typeString('A FULLSTACK <span class="h1-spans"> SOFTWARE Engineer</span>.')
     .pauseFor(1000)
     .typeString(
-      `<br/><a href="mailto:marine.m.crouzet@gmail.com" class="js-header-email" style='font-size: 1.5vw;'
+      `<br/><a href="mailto:marine.m.crouzet@gmail.com" class="js-header-email"
           >Hire Me:<span class="email-span"> marine.m.crouzet@gmail.com</span></a
         >`
     )

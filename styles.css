@@ -153,6 +153,7 @@ h1 {
   text-decoration: none;
   font-weight: 700;
   color: var(--color-dark-blue);
+  font-size: 1.5vw;
 }
 
 .js-header-email:hover {
@@ -449,7 +450,9 @@ footer {
   p {
     max-width: 100%;
   }
-
+  .js-header-email {
+    font-size: 2.8vw;
+  }
   .social-icons-about {
     color: var(--color-dark-blue);
     padding: 0 20px;
